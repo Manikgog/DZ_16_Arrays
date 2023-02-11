@@ -6,15 +6,15 @@
 
 int main() {
 	setlocale(LC_ALL, "Russian");
-	SetConsoleCP(1251); // установка кодовой страницы на ввод текста
+	SetConsoleCP(1251); // setting the code page for text input
 	srand(time(NULL));
 
-	// Задача 1.
+	// Exercise 1.
 	/*
-		В одномерном массиве размером в 10 элементов
-	найдите среднее арифметическое. Также посчитайте
-	кол-во элементов, значение которых меньше
-	найденного среднего арифметического.
+		In a one-dimensional array of 10 elements, 
+	find the arithmetic mean. Also count
+	the number of elements whose value is less
+	than the found arithmetic mean.
 	*/
 	std::cout << "Exercise 1.\nA program to search for the arithmetic mean\nof an array of numbers and output numbers \nthat are less than the arithmetic mean.\n";
 	const int size = 10;
@@ -34,13 +34,13 @@ int main() {
 	}
 	std::cout << "\nArithmetic mean = " << arMean << ".\nNumber of elements = " << count_less << ".\n\n\n";
 	
-	// Задача 2.
+	// Exercise 2.
 	/*
-		Даны два двумерных массива размерами 5 на 5
-	элементов. Требуется сложить их между собой.
-	Выведите в консоль результаты попарного сложения
-	элементов обоих массивов, которые располагаются в
-	одинаковых координатах.
+		Two two-dimensional arrays of 5 by 5
+	elements are given. It is required to put them together.
+	Output to the console the results of pairwise addition
+	of elements of both arrays, which are located in
+	the same coordinates.
 	*/
 	std::cout << "Exercise 2.\nA program for addition of arrays.\n";
 	const int length = 5;
@@ -92,13 +92,12 @@ int main() {
 	}
 	std::cout << "\n\n";
 
-	// Задача 3.
+	// Exercise 3.
 	/*
-		Пользователь вводит шестизначное число. Если
-	число введено неверно, программа завершает свою
-	работу. Иначе, программа в цикле помещает все его
-	цифры в одномерный массив размером в 6 элементов и
-	выводит его на экран.
+		The user enters a six-digit number. If
+	the number is entered incorrectly, the program terminates. 
+	Otherwise, the program puts all its digits in a one-dimensional 
+	array of 6 elements in a loop and displays it on the screen.
 	*/
 	std::cout << "Exercise 3.\nArray from a six-digit number.\n";
 	std::cout << "Enter a six-digit number -> ";
